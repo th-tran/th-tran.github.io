@@ -1,0 +1,17 @@
+<footer class="Site-footer">
+  <div class="util-separator"></div>
+  <div class="Footer">
+    <p>&copy; Copyright <script>document.write((new Date()).getFullYear());</script> by {{ author }}</p>
+    <p>
+      <div class="Footer-social">
+        <script>
+          u = '{{ mail_username }}';
+          s = '{{ mail_host }}';
+          document.write('<a class="SocialIcon" href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i title="Email" class="fas fa-envelope-square fa-lg"></i> </a>');
+        </script>
+        <a class="SocialIcon" href="{{ github_url }}" target="_blank" rel="noopener"> <i title="GitHub" class="fab fa-github-square fa-lg"></i> </a>
+        <a class="SocialIcon" href="{{ linkedin_url }}" target="_blank" rel="noopener"><i title="LinkedIn" class="fab fa-linkedin fa-lg" ></i></a>
+      </div>
+    </p>
+  </div>
+</footer>

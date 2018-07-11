@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>{% block title %} {{ site_name }} {% endblock %}</title>
+    <meta name="author" content="{{ author }}">
+    <meta name="description" content="The personal website of {{ author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="Site">
+    {% block header %}
+      {% include "header.html" %}
+    {% endblock %}
+
+    <div class="Site-content">
+      <div class="util-container">
+      {% block content %} {% endblock %}
+      </div>
+    </div>
+
+    {% block footer %}
+      {% include "footer.html" %}
+    {% endblock %}
+    {% block javascript %}{% endblock %}
+  </body>
+</html>

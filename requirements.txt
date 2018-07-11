@@ -1,0 +1,10 @@
+# App
+flask
+flask-script
+flask-flatpages
+frozen-flask
+jinja2
+bs4
+
+# Deployment
+ghp-import
