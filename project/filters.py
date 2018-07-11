@@ -5,7 +5,7 @@ except ImportError:  # py2
     from urlparse import urlparse
 from flask import Markup
 from bs4 import BeautifulSoup
-from .main import app
+from app import app
 
 
 @app.template_filter('fenced_code')

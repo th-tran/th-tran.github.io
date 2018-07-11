@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %} {{ page.title }} | {{ site_name }} {% endblock %}
 {% block content %}
-<div class="Page {{'Page--landing' if page.metadata.get('landing') else ''}}">
-  {{ page.content }}
+<div class="Page {{'Page--landing' if page.meta.get('landing') else ''}}">
+  {{ page }}
 </div>
 {% endblock %}
