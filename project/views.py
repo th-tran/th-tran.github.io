@@ -15,7 +15,13 @@ def pages_url_generator():
 
 @app.route('/')
 def home():
-    return render_template('base.html', pages=pages)
+    page = pages.get_or_404('home')
+    return render_template('page.html',
+        page=page,
+        author='Thomas Tran',
+        site_name='thtran.com',
+        site_url='http://thtran.com',
+        github_url='http://github.com/th-tran')
 
 @app.route('/<path:path>/')
 def page(path):

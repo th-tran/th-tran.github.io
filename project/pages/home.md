@@ -1,5 +1,3 @@
-url:
-save_as: index.html
 title: Me
 date: 2018-07-11 12:00
 landing: true

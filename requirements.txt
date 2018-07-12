@@ -5,6 +5,7 @@ flask-flatpages
 frozen-flask
 jinja2
 bs4
+webassets
 
 # Deployment
 ghp-import

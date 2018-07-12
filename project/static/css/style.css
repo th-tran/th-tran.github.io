@@ -1,0 +1,334 @@
+/* Variables */
+:root {
+  --fontColor: hsla(0, 0%, 0%, 0.75);
+  --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
+  --fontSerif: 'Merriweather', Georgia, serif;
+  --fontWeightLight: 300;
+  --fontWeightMed: 400;
+  --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
+  --lineHeight: 1.5;
+
+  /* Type scale ratio on smaller screens */
+  --ratioSm: 1.2; /* Minor third */
+
+  /* Type scale ratio on larger screens */
+  --ratioLg: 1.414; /* Augmented fourth */
+
+  /* Break points */
+  --minMd: 35.5em;
+  --minLg: 48em;
+
+  /* Type scale */
+  --stepUp1: media(
+    calc(1em * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg))
+  );
+  --stepUp2: media(
+    calc(1em * var(--ratioSm) * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg))
+  );
+  --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
+  --stepUp3: media(
+    calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm)),
+    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
+  );
+  --stepDown1: media(
+    calc(1em / var(--ratioSm)),
+    (min-width: var(--minMd)) calc(1em / var(--ratioLg))
+  );
+
+  /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
+
+  /* Base font size on mobile */
+  --baseFontSizeSm: 100%;
+
+  /* Base font size on larger screens */
+  --baseFontSizeMd: 112.5%;
+  --smallFontSize: 0.875em;
+  --socialIconSize: 27px;
+  --maxWidth: 40rem;
+  --primaryColor: hsl(207, 48%, 26%);
+  --secondaryColor: #32742c;
+  --mutedColor: #888;
+  --mutedPrimary: hsla(207, 48%, 26%, 0.8);
+  --gray: #ccc;
+  --grayHighlight: #f9f9f9;
+}
+
+/* Custom media queries */
+
+/* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
+@custom-media --break-md (width >= 35.5em);
+@custom-media --break-lg (width >= 48em);
+
+html {
+  font-size: var(--baseFontSizeSm);
+  font-variant-numeric: oldstyle-nums;
+  line-height: var(--lineHeight);
+  font-family: var(--fontSansSerif);
+  font-weight: var(--fontWeightMed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  color: var(--fontColor);
+
+  /* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  box-sizing: border-box;
+
+  @media (--break-md) {
+    font-size: var(--baseFontSizeMd);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: var(--fontSerif);
+  font-weight: var(--fontWeightMed);
+  margin: calc(1em * var(--ratioLg)) 0 0.5em;
+  line-height: 1.2;
+}
+
+h1.u-lead {
+  font-family: var(--fontSansSerif);
+  font-weight: var(--fontWeightLight);
+  font-size: var(--stepUp2Fixed);
+}
+
+h1 {
+  font-size: var(--stepUp2);
+}
+
+h2 {
+  font-size: var(--stepUp1);
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+small,
+aside {
+  font-size: var(--smallFontSize);
+}
+
+a {
+  color: var(--primaryColor);
+}
+
+a:hover {
+  color: var(--secondaryColor);
+}
+
+/* We use some features that pygments doesn't support,
+ * such as custom properties. This is a workaround.
+ * */
+.highlight .err {
+  color: inherit;
+  background-color: inherit;
+}
+
+/* Utilities */
+
+.u-container,
+.u-separator,
+.Nav {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0 1.8em;
+}
+
+.u-separator {
+  border-bottom: 1px solid var(--gray);
+  max-width: calc(var(--maxWidth) - 2em);
+  opacity: 0.5;
+  font-size: 16px;
+  color: var(--fontColor);
+}
+
+.u-muted {
+  color: var(--mutedColor);
+}
+
+.u-2-col-list {
+  padding: 0.5rem 0 0 0;
+  list-style: none;
+
+  & li {
+    margin-bottom: 1.3em;
+  }
+
+  & li span {
+    display: block;
+    font-size: 0.9em;
+    margin-top: -1.5em;
+    padding: 1.7em 0 0.5em 0;
+
+    @media (--break-lg) {
+      padding: 0 0 0 13.5em;
+    }
+  }
+}
+
+/* Components */
+
+/* Site layout */
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+
+.Site-header {
+  flex: none;
+}
+
+.Site-footer {
+  padding: 0;
+  margin-top: 5vh;
+  flex: 0 0 20%;
+
+  @media (--break-lg) {
+    margin-top: 2.82715em;
+  }
+}
+
+/* Nav */
+.Nav {
+  margin-bottom: 0.556em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (--break-md) {
+    padding-top: 2em;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+}
+
+.Nav-home a {
+  font-family: var(--fontSerif);
+  flex: 0 1 20%;
+  font-size: 1em;
+
+  @media (width >= 28em) {
+    font-size: 1.3em;
+  }
+
+  /* reduce effect of FOUC */
+  @nest .wf-loading & {
+    font-size: 133%;
+  }
+}
+
+.Nav-sections {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+
+  @media (--break-md) {
+    justify-content: flex-end;
+  }
+
+  & .Nav-section {
+    font-family: var(--fontSansSerif);
+    font-weight: var(--fontWeightLight);
+    text-decoration: none;
+    padding: 0 15px;
+
+    /* reduce effect of FOUC */
+    @nest .wf-loading & {
+      font-weight: 200;
+    }
+  }
+
+  & .Nav-section:last-child {
+    padding-right: 0;
+  }
+
+  & .Nav-section.Nav-section--active {
+    font-weight: var(--fontWeightMed);
+  }
+}
+
+/* Footer */
+
+.Footer {
+  margin: 10px auto 0 auto;
+  font-family: var(--fontSerif);
+  font-size: var(--stepDown1);
+  color: var(--mutedColor);
+  text-align: center;
+  padding: 0 1.8em;
+
+  & a {
+    color: var(--mutedColor);
+  }
+
+  & a:hover {
+    color: var(--secondaryColor);
+    opacity: 0.8;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  & .Footer-social {
+    font-size: var(--socialIconSize);
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    & a {
+      text-decoration: none;
+    }
+
+    & .SocialIcon {
+      display: inline;
+      margin: 0 1vw;
+      padding: 0;
+    }
+  }
+}
+
+/* Content */
+
+.Site-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.Page {
+  padding-top: 5vh;
+
+  @media (--break-lg) {
+    padding-top: 2.82715em;
+  }
+}
+
+.Page--landing {
+  font-family: var(--fontSerif);
+
+  /* reduce effect of FOUC */
+  @nest .wf-loading & p {
+    font-size: 112%;
+  }
+}
