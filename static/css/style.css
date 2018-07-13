@@ -14,28 +14,12 @@
   /* Type scale ratio on larger screens */
   --ratioLg: 1.414; /* Augmented fourth */
 
-  /* Break points */
-  --minMd: 35.5em;
-  --minLg: 48em;
-
   /* Type scale */
-  --stepUp1: media(
-    calc(1em * var(--ratioSm)),
-    (min-width: var(--minLg)) calc(1em * var(--ratioLg))
-  );
-  --stepUp2: media(
-    calc(1em * var(--ratioSm) * var(--ratioSm)),
-    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg))
-  );
+  --stepUp1: calc(1em * var(--ratioLg));
+  --stepUp2: calc(1em * var(--ratioLg) * var(--ratioLg));
   --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
-  --stepUp3: media(
-    calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm)),
-    (min-width: var(--minLg)) calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg))
-  );
-  --stepDown1: media(
-    calc(1em / var(--ratioSm)),
-    (min-width: var(--minMd)) calc(1em / var(--ratioLg))
-  );
+  --stepUp3: calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg));
+  --stepDown1: calc(1em / var(--ratioLg));
 
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
 
@@ -44,6 +28,7 @@
 
   /* Base font size on larger screens */
   --baseFontSizeMd: 112.5%;
+  
   --smallFontSize: 0.875em;
   --socialIconSize: 27px;
   --maxWidth: 40rem;
@@ -55,11 +40,7 @@
   --grayHighlight: #f9f9f9;
 }
 
-/* Custom media queries */
-
-/* Use em for media queries: https://zellwk.com/blog/media-query-units/ */
-@custom-media --break-md (width >= 35.5em);
-@custom-media --break-lg (width >= 48em);
+/* Global */
 
 html {
   font-size: var(--baseFontSizeSm);
@@ -75,8 +56,10 @@ html {
 
   /* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
   box-sizing: border-box;
+}
 
-  @media (--break-md) {
+@media (min-width: 37.5em) {
+  html {
     font-size: var(--baseFontSizeMd);
   }
 }
@@ -105,11 +88,23 @@ h1.u-lead {
 }
 
 h1 {
-  font-size: var(--stepUp2);
+  font-size: calc(1em * var(--ratioSm) * var(--ratioSm));
+}
+
+@media (min-width: 50em) {
+  h1 {
+    font-size: var(--stepUp2);
+  }
 }
 
 h2 {
-  font-size: var(--stepUp1);
+  font-size: calc(1em * var(--ratioSm));
+}
+
+@media (min-width: 50em) {
+  h2 {
+    font-size: var(--stepUp1);
+  }
 }
 
 h3 {
@@ -127,14 +122,6 @@ a {
 
 a:hover {
   color: var(--secondaryColor);
-}
-
-/* We use some features that pygments doesn't support,
- * such as custom properties. This is a workaround.
- * */
-.highlight .err {
-  color: inherit;
-  background-color: inherit;
 }
 
 /* Utilities */
@@ -159,26 +146,6 @@ a:hover {
   color: var(--mutedColor);
 }
 
-.u-2-col-list {
-  padding: 0.5rem 0 0 0;
-  list-style: none;
-
-  & li {
-    margin-bottom: 1.3em;
-  }
-
-  & li span {
-    display: block;
-    font-size: 0.9em;
-    margin-top: -1.5em;
-    padding: 1.7em 0 0.5em 0;
-
-    @media (--break-lg) {
-      padding: 0 0 0 13.5em;
-    }
-  }
-}
-
 /* Components */
 
 /* Site layout */
@@ -198,8 +165,10 @@ a:hover {
   padding: 0;
   margin-top: 5vh;
   flex: 0 0 20%;
+}
 
-  @media (--break-lg) {
+@media (min-width: 50em) {
+  .Site-footer {
     margin-top: 2.82715em;
   }
 }
@@ -213,29 +182,28 @@ a:hover {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
+}
 
-  @media (--break-md) {
+@media (min-width: 37.5em) {
+  .Nav {
     padding-top: 2em;
   }
+}
 
-  & a {
-    text-decoration: none;
-    font-size: 1.3em;
-  }
+.Nav a {
+  text-decoration: none;
+  font-size: 1.3em;
 }
 
 .Nav-home a {
   font-family: var(--fontSerif);
   flex: 0 1 20%;
   font-size: 1em;
+}
 
-  @media (width >= 28em) {
+@media (min-width: 30em) {
+  .Nav-home a {
     font-size: 1.3em;
-  }
-
-  /* reduce effect of FOUC */
-  @nest .wf-loading & {
-    font-size: 133%;
   }
 }
 
@@ -243,30 +211,27 @@ a:hover {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
+}
 
-  @media (--break-md) {
+@media (min-width: 37.5em) {
+  .Nav-sections {
     justify-content: flex-end;
   }
+}
 
-  & .Nav-section {
-    font-family: var(--fontSansSerif);
-    font-weight: var(--fontWeightLight);
-    text-decoration: none;
-    padding: 0 15px;
+.Nav-section {
+  font-family: var(--fontSansSerif);
+  font-weight: var(--fontWeightLight);
+  text-decoration: none;
+  padding: 0 15px;
+}
 
-    /* reduce effect of FOUC */
-    @nest .wf-loading & {
-      font-weight: 200;
-    }
-  }
+.Nav-section:last-child {
+  padding-right: 0;
+}
 
-  & .Nav-section:last-child {
-    padding-right: 0;
-  }
-
-  & .Nav-section.Nav-section--active {
-    font-weight: var(--fontWeightMed);
-  }
+.Nav-section.Nav-section--active {
+  font-weight: var(--fontWeightMed);
 }
 
 /* Footer */
@@ -274,39 +239,45 @@ a:hover {
 .Footer {
   margin: 10px auto 0 auto;
   font-family: var(--fontSerif);
-  font-size: var(--stepDown1);
+  font-size: calc(1em / var(--ratioSm));
   color: var(--mutedColor);
   text-align: center;
   padding: 0 1.8em;
+}
 
-  & a {
-    color: var(--mutedColor);
+@media (min-width: 37.5em) {
+  .Footer {
+    font-size: var(--stepDown1);
   }
+}
 
-  & a:hover {
-    color: var(--secondaryColor);
-    opacity: 0.8;
-  }
+.Footer a {
+  color: var(--mutedColor);
+}
 
-  & p {
-    margin: 0;
-  }
+.Footer a:hover {
+  color: var(--secondaryColor);
+  opacity: 0.8;
+}
 
-  & .Footer-social {
-    font-size: var(--socialIconSize);
-    padding-top: 20px;
-    padding-bottom: 10px;
+.Footer p {
+  margin: 0;
+}
 
-    & a {
-      text-decoration: none;
-    }
+.Footer-social {
+  font-size: var(--socialIconSize);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
-    & .SocialIcon {
-      display: inline;
-      margin: 0 1vw;
-      padding: 0;
-    }
-  }
+.Footer-social a {
+  text-decoration: none;
+}
+
+.Footer-social .SocialIcon {
+  display: inline;
+  margin: 0 1vw;
+  padding: 0;
 }
 
 /* Content */
@@ -318,17 +289,14 @@ a:hover {
 
 .Page {
   padding-top: 5vh;
+}
 
-  @media (--break-lg) {
+@media (min-width: 50em) {
+  .Page {
     padding-top: 2.82715em;
   }
 }
 
 .Page--landing {
   font-family: var(--fontSerif);
-
-  /* reduce effect of FOUC */
-  @nest .wf-loading & p {
-    font-size: 112%;
-  }
 }
