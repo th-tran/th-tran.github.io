@@ -7,8 +7,10 @@ This is the source for my [personal site][thtran]!
 ## Framework
 This is a static website powered by [Flask](http://flask.pocoo.org/) and hosted by [Github Pages](https://pages.github.com/).
 
+(Shoutout to [Armin Ronacher](http://lucumr.pocoo.org/) for making such an awesome framework and [Github](https://github.com) for letting us host our sites for free!)
+
 ## Workflow
-I use [Github](https://github.com) to version control and deploy this site.
+I use [Github](https://github.com) (obviously :P) to version control and deploy this site.
 - app: Development branch.
 - master: Production branch.
 
