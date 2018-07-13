@@ -4,7 +4,11 @@
 
 This is the source for my [personal site][thtran]!
 
+## Framework
+This is a static website powered by [Flask](http://flask.pocoo.org/) and hosted by [Github Pages](https://pages.github.com/).
+
 ## Workflow
+I use [Github](https://github.com) to version control and deploy this site.
 - app: Development branch.
 - master: Production branch.
 
