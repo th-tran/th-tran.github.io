@@ -1,0 +1,12 @@
+<header class="Site-header">
+  <nav class="Nav">
+    <div class="Nav-home">
+      <a href="{{ base_url }}">{{ site_name }}</a>
+    </div>
+    <div class="Nav-sections">
+      <a class="Nav-section {{'Nav-section--active' if page and page.url == ''}}" href="{{ base_url }}/">about</a>
+      <a class="Nav-section {{'Nav-section--active' if page and page.url == 'projects'}}" href="{{ base_url }}/projects">projects</a>
+    </div>
+  </nav>
+  <div class="u-separator"></div>
+</header>
