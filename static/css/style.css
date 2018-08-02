@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --fontColor: hsla(0, 0%, 0%, 0.75);
+  --fontColor: hsla(0, 0%, 100%, 0.7);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
   --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightLight: 300;
@@ -15,11 +15,12 @@
   --ratioLg: 1.414; /* Augmented fourth */
 
   /* Type scale */
-  --stepUp1: calc(1em * var(--ratioLg));
-  --stepUp2: calc(1em * var(--ratioLg) * var(--ratioLg));
+  --stepUp1: calc(1em * var(--ratioSm));
+  --stepUp2: calc(1em * var(--ratioSm) * var(--ratioSm));
+  --stepUp2FixedSm: calc(1em * var(--ratioSm) * var(--ratioSm));
   --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
-  --stepUp3: calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg));
-  --stepDown1: calc(1em / var(--ratioLg));
+  --stepUp3: calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm));
+  --stepDown1: calc(1em / var(--ratioSm));
 
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
 
@@ -28,16 +29,31 @@
 
   /* Base font size on larger screens */
   --baseFontSizeMd: 112.5%;
-  
   --smallFontSize: 0.875em;
   --socialIconSize: 27px;
   --maxWidth: 40rem;
-  --primaryColor: hsl(207, 48%, 26%);
+  /*--primaryColor: hsl(207, 48%, 26%);*/
+  --primaryColor: hsl(204, 62%, 47%);
   --secondaryColor: #32742c;
   --mutedColor: #888;
   --mutedPrimary: hsla(207, 48%, 26%, 0.8);
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
+  --backgroundColor: #212121;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --stepUp1: calc(1em * var(--ratioLg));
+    --stepUp2: calc(1em * var(--ratioLg) * var(--ratioLg));
+    --stepUp3: calc(1em * var(--ratioLg) * var(--ratioLg) * var(--ratioLg));
+  }
+}
+
+@media (min-width: 37.5em) {
+  :root {
+    --stepDown1: calc(1em / var(--ratioLg));
+  }
 }
 
 /* Global */
@@ -64,6 +80,14 @@ html {
   }
 }
 
+body {
+  background-color: var(--backgroundColor);
+}
+
+.primary {
+  color: var(--primaryColor);
+}
+
 *,
 *::before,
 *::after {
@@ -85,26 +109,22 @@ h1.u-lead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
   font-size: var(--stepUp2Fixed);
+  color: var(--primaryColor);
 }
 
 h1 {
-  font-size: calc(1em * var(--ratioSm) * var(--ratioSm));
+  font-size: var(--stepUp2);
 }
 
-@media (min-width: 50em) {
-  h1 {
-    font-size: var(--stepUp2);
-  }
+h2.u-sublead {
+  font-family: var(--fontSansSerif);
+  font-weight: var(--fontWeightLight);
+  font-size: var(--stepUp2FixedSm);
+  color: var(--primaryColor);
 }
 
 h2 {
-  font-size: calc(1em * var(--ratioSm));
-}
-
-@media (min-width: 50em) {
-  h2 {
-    font-size: var(--stepUp1);
-  }
+  font-size: var(--stepUp1);
 }
 
 h3 {
@@ -239,7 +259,7 @@ a:hover {
 .Footer {
   margin: 10px auto 0 auto;
   font-family: var(--fontSerif);
-  font-size: calc(1em / var(--ratioSm));
+  font-size: var(--stepDown1);
   color: var(--mutedColor);
   text-align: center;
   padding: 0 1.8em;
@@ -287,6 +307,10 @@ a:hover {
   width: 100%;
 }
 
+.Page > h1 {
+  margin: 0;
+}
+
 .Page {
   padding-top: 5vh;
 }
@@ -299,4 +323,10 @@ a:hover {
 
 .Page--landing {
   font-family: var(--fontSerif);
+}
+
+/* Tags */
+.Tag-header {
+  font-size: 1.1em;
+  text-align: center;
 }
