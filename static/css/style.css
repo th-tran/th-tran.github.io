@@ -1,19 +1,18 @@
 /* Variables */
+
 :root {
   --fontColor: hsla(0, 0%, 100%, 0.7);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
-  --fontSerif: 'Merriweather', Georgia, serif;
-  --fontWeightLight: 300;
-  --fontWeightMed: 400;
+  --fontWeightLight: lighter;
+  --fontWeightMed: normal;
   --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
   --lineHeight: 1.5;
-
   /* Type scale ratio on smaller screens */
-  --ratioSm: 1.2; /* Minor third */
-
+  /* Minor third */
+  --ratioSm: 1.2;
   /* Type scale ratio on larger screens */
-  --ratioLg: 1.414; /* Augmented fourth */
-
+  /* Augmented fourth */
+  --ratioLg: 1.414;
   /* Type scale */
   --stepUp1: calc(1em * var(--ratioSm));
   --stepUp2: calc(1em * var(--ratioSm) * var(--ratioSm));
@@ -21,12 +20,9 @@
   --stepUp2Fixed: calc(1em * var(--ratioLg) * var(--ratioLg));
   --stepUp3: calc(1em * var(--ratioSm) * var(--ratioSm) * var(--ratioSm));
   --stepDown1: calc(1em / var(--ratioSm));
-
   /* Use percentages for base font sizes: https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
-
   /* Base font size on mobile */
   --baseFontSizeSm: 100%;
-
   /* Base font size on larger screens */
   --baseFontSizeMd: 112.5%;
   --smallFontSize: 0.875em;
@@ -60,7 +56,6 @@
 
 html {
   font-size: var(--baseFontSizeSm);
-  font-variant-numeric: oldstyle-nums;
   line-height: var(--lineHeight);
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightMed);
@@ -69,7 +64,6 @@ html {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures contextual;
   color: var(--fontColor);
-
   /* Box model as it should be: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
   box-sizing: border-box;
 }
@@ -88,18 +82,13 @@ body {
   color: var(--primaryColor);
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
 /* Typography */
 
-h1,
-h2,
-h3 {
-  font-family: var(--fontSerif);
+h1, h2, h3 {
   font-weight: var(--fontWeightMed);
   margin: calc(1em * var(--ratioLg)) 0 0.5em;
   line-height: 1.2;
@@ -131,8 +120,7 @@ h3 {
   font-size: 1.1em;
 }
 
-small,
-aside {
+small, aside {
   font-size: var(--smallFontSize);
 }
 
@@ -146,9 +134,7 @@ a:hover {
 
 /* Utilities */
 
-.u-container,
-.u-separator,
-.Nav {
+.u-container, .u-separator, .Nav {
   max-width: var(--maxWidth);
   margin: 0 auto;
   padding: 0 1.8em;
@@ -194,6 +180,7 @@ a:hover {
 }
 
 /* Nav */
+
 .Nav {
   margin-bottom: 0.556em;
   padding-top: 1em;
@@ -216,7 +203,6 @@ a:hover {
 }
 
 .Nav-home a {
-  font-family: var(--fontSerif);
   flex: 0 1 20%;
   font-size: 1em;
 }
@@ -258,7 +244,6 @@ a:hover {
 
 .Footer {
   margin: 10px auto 0 auto;
-  font-family: var(--fontSerif);
   font-size: var(--stepDown1);
   color: var(--mutedColor);
   text-align: center;
@@ -307,7 +292,7 @@ a:hover {
   width: 100%;
 }
 
-.Page > h1 {
+.Page>h1 {
   margin: 0;
 }
 
@@ -321,11 +306,8 @@ a:hover {
   }
 }
 
-.Page--landing {
-  font-family: var(--fontSerif);
-}
-
 /* Tags */
+
 .Tag-header {
   font-size: 1.1em;
   text-align: center;

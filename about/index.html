@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,19 +12,39 @@
     <script>
       (function(d) {
         var config = {
-          kitId: 'efs6vco',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: 'efs6vco',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
       })(document);
+
     </script>
     <link rel="stylesheet" href="/static/css/style.css">
   </head>
 
   <body class="Site">
-    
-      <header class="Site-header">
+     <header class="site-header">
   <nav class="Nav">
     <div class="Nav-home">
       <a href="http://thtran.com">thtran.com</a>
@@ -34,13 +55,12 @@
     </div>
   </nav>
   <div class="u-separator"></div>
-</header>
-    
+</header> 
 
     <div class="Site-content">
       <div class="u-container">
         
-<div class="Page ">
+<div class="Page">
   <h1 class="u-lead">Nice to meet you.</h1>
 
 <p>My name is Thomas Tran. I am currently enrolled at the University of Guelph, ready to enter my second work term at NCR and embark on my 3rd year of school
@@ -113,28 +133,32 @@ I have learned so much more about this field than I expected through emerging te
       </div>
     </div>
 
-    
-      <footer class="Site-footer">
+     <footer class="Site-footer">
   <div class="u-separator"></div>
   <div class="Footer">
-    <p>&copy; Copyright <script>document.write((new Date()).getFullYear());</script> by Thomas Tran</p>
+    <p>&copy; Copyright
+      <script>
+        document.write((new Date()).getFullYear());
+
+      </script> by Thomas Tran</p>
     <p>
       <div class="Footer-social">
         <script>
           u = 'tran.th.thomas';
           s = 'gmail.com';
           document.write('<a class="SocialIcon" href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i title="Email" class="fas fa-envelope-square fa-lg"></i> </a>');
+
         </script>
         <a class="SocialIcon" href="http://github.com/th-tran" target="_blank" rel="noopener"> <i title="GitHub" class="fab fa-github-square fa-lg"></i> </a>
         <a class="SocialIcon" href="http://linkedin.com/in/thomas-th-tran" target="_blank" rel="noopener"><i title="LinkedIn" class="fab fa-linkedin fa-lg" ></i></a>
       </div>
     </p>
   </div>
-</footer>
-    
+</footer> 
 
     <!-- Javascript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- end scripts -->
   </body>
+
 </html>
