@@ -3,8 +3,10 @@
 :root {
   --fontColor: hsla(0, 0%, 100%, 0.7);
   --fontSansSerif: 'Lato', 'Helvetica Neue', sans-serif;
+  --fontSerif: 'Merriweather', Georgia, serif;
   --fontWeightLight: lighter;
   --fontWeightMed: normal;
+  --fontWeightHeavy: bolder;
   --fontMonospace: Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
   --lineHeight: 1.5;
   /* Type scale ratio on smaller screens */
@@ -89,6 +91,7 @@ body {
 /* Typography */
 
 h1, h2, h3 {
+  font-family: var(--fontSerif);
   font-weight: var(--fontWeightMed);
   margin: calc(1em * var(--ratioLg)) 0 0.5em;
   line-height: 1.2;
@@ -203,6 +206,7 @@ a:hover {
 }
 
 .Nav-home a {
+  font-family: var(--fontSerif);
   flex: 0 1 20%;
   font-size: 1em;
 }
@@ -237,13 +241,14 @@ a:hover {
 }
 
 .Nav-section.Nav-section--active {
-  font-weight: var(--fontWeightMed);
+  font-weight: var(--fontWeightHeavy);
 }
 
 /* Footer */
 
 .Footer {
   margin: 10px auto 0 auto;
+  font-family: var(--fontSerif);
   font-size: var(--stepDown1);
   color: var(--mutedColor);
   text-align: center;
@@ -304,6 +309,10 @@ a:hover {
   .Page {
     padding-top: 2.82715em;
   }
+}
+
+.Page--landing {
+  font-family: var(--fontSerif);
 }
 
 /* Tags */
