@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-'''Management commands.'''
 
+'''Management commands.'''
 import os
 import shutil
 
@@ -8,13 +8,15 @@ from flask_script import Manager
 from project.main import app, freezer
 
 manager = Manager(app)
-build_dir = app.config['FREEZER_DESTINATION']
+BUILD_DIR = app.config['FREEZER_DESTINATION']
 HERE = os.path.dirname(os.path.abspath(__file__))
+
 
 @manager.command
 def install():
     '''Installs all required packages.'''
     os.system('pip install -U -r requirements.txt')
+
 
 @manager.command
 def build():
@@ -23,8 +25,9 @@ def build():
     freezer.freeze()  # Freezes the project to build
     print('Copying CNAME...')
     cname = os.path.join(HERE, 'CNAME')
-    shutil.copyfile(cname, os.path.join(build_dir, 'CNAME'))
+    shutil.copyfile(cname, os.path.join(BUILD_DIR, 'CNAME'))
     print('...done')
+
 
 @manager.command
 def deploy(push=True):
@@ -34,7 +37,7 @@ def deploy(push=True):
     command = 'ghp-import -b master -m "[deploy] Build" '
     if push:
         command += '-p '
-    command += build_dir
+    command += BUILD_DIR
     os.system(command)
     print('...done')
 

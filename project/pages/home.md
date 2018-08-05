@@ -1,7 +1,5 @@
 title: Me
 date: 2018-07-11 12:00
-url:
-landing: true
 
 <h1 class="u-lead">Thomas Tran</h1>
 

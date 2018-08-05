@@ -2,14 +2,8 @@
 
 """
 Single entry-point that resolves the import dependencies.
-This file is also used to run the app:
-    python main.py
+Force all routes to register before running the app.
 """
-import os
-from app import app, pages, freezer
-from views import *
-from filters import *
-
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+from project.app import app, pages, freezer
+from project.views import *
+from project.filters import *

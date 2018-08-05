@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
+
+"""
+Custom filters for Jinja2 templates.
+"""
 try:
     from urllib.parse import urlparse
 except ImportError:  # py2
     from urlparse import urlparse
 from flask import Markup
 from bs4 import BeautifulSoup
-from app import app
+from project.app import app
 
 
 @app.template_filter('fenced_code')
@@ -19,6 +23,7 @@ def fenced_code(html):
     joined = '\n'.join(block_strs)
     return Markup(joined)
 
+
 @app.template_filter('github_urlize')
 def github_urlize(string):
     """
@@ -31,19 +36,20 @@ def github_urlize(string):
         username = url.path.lstrip('/')
         markup = '<a href="{}">{}</a>'.format(string, username)
         return Markup(markup)
-    else:
-        return string
+    return string
+
 
 @app.template_filter('lower_first')
 def lower_first(string):
     '''Lowercases the first letter of a string.'''
     if not string:
         return ''
-    else:
-        first = string[0]
-        rest = string[1:]
-        return first.lower() + rest
+    first = string[0]
+    rest = string[1:]
+    return first.lower() + rest
+
 
 @app.template_filter('datetime_format')
-def datetime_format(value, format=app.config.get("DATETIME_FORMAT", "%m/%d/%y")):
-    return value.strftime(format)
+def datetime_format(value, fmt=app.config.get("DATETIME_FORMAT", "%m/%d/%y")):
+    '''Formats datetime into proper string format.'''
+    return value.strftime(fmt)
