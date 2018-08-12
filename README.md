@@ -1,6 +1,6 @@
 # thtran.com
 
-[http://thtran.com][thtran]
+[https://thtran.com][thtran]
 
 This is the source for my [personal site][thtran]!
 
@@ -55,4 +55,4 @@ This will build the site, commit to the `master` branch, and push to GitHub.
 
 - This site is a continuous WIP: I'll keep adding more features and content as I develop myself :)
 
-[thtran]: http://thtran.com
+[thtran]: https://thtran.com
