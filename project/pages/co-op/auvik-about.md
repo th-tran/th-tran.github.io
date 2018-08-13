@@ -22,19 +22,19 @@ Quick facts:
 
 <h2 class="u-sublead">More About This Work Term</h2>
 
-[About the Employer](/co-op/auvik-about/) (\*)
+[About the Employer](https://thtran.com/co-op/auvik-about/) (\*)
 
-[Job Description](/co-op/auvik-job-description/)
+[Job Description](https://thtran.com/co-op/auvik-job-description/)
 
-[Main Focus](/co-op/auvik-main-focus/)
+[Main Focus](https://thtran.com/co-op/auvik-main-focus/)
 
-[Work Term Goals](/co-op/auvik-work-term-goals/)
+[Work Term Goals](https://thtran.com/co-op/auvik-work-term-goals/)
 
-[Skiils and Application](/co-op/auvik-skills-and-application/)
+[Skiils and Application](https://thtran.com/co-op/auvik-skills-and-application/)
 
-[Conclusion](/co-op/auvik-conclusion/)
+[Conclusion](https://thtran.com/co-op/auvik-conclusion/)
 
-[Acknowledgements](/co-op/auvik-acknowledgements/)
+[Acknowledgements](https://thtran.com/co-op/auvik-acknowledgements/)
 
 <div style="float: left;">
 Previous: <a href="{{ site_url}}/co-op/">Co-op</a>
