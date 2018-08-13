@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="author" content="Thomas Tran">
+    <meta name="description" content=" The personal website of Thomas Tran ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <!-- Event: Load TypeKit for modified fonts -->
+    <script>
+      (function(d) {
+        var config = {
+            kitId: 'efs6vco',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+
+    </script>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+
+  <body class="Site">
+     <header class="site-header">
+  <nav class="Nav">
+    <div class="Nav-home">
+      <a href="http://thtran.com">thtran.com</a>
+    </div>
+    <div class="Nav-sections">
+      <a class="Nav-section " href="http://thtran.com/about">about</a>
+      <a class="Nav-section " href="http://thtran.com/co-op">co-op</a>
+    </div>
+  </nav>
+  <div class="u-separator"></div>
+</header> 
+
+    <div class="Site-content">
+      <div class="u-container">
+        
+<h1 class="u-lead center">404</h1>
+<p class="center">Sorry, this page doesn't exist right now. Check back later!</p>
+<p class="center">
+  In the meantime, you can
+  <a href="/" onclick="window.history.back()">go back</a> where you came from or
+  <a href="/">return home</a>.
+</p>
+
+      </div>
+    </div>
+
+     <footer class="Site-footer">
+  <div class="u-separator"></div>
+  <div class="Footer">
+    <p>&copy; Copyright
+      <script>
+        document.write((new Date()).getFullYear());
+
+      </script> by Thomas Tran</p>
+    <p>
+      <div class="Footer-social">
+        <script>
+          u = 'tran.th.thomas';
+          s = 'gmail.com';
+          document.write('<a class="SocialIcon" href=\"mailto:' + u + '@' + s + '\" target=\"_blank\" rel="noopener"><i title="Email" class="fas fa-envelope-square fa-lg"></i> </a>');
+
+        </script>
+        <a class="SocialIcon" href="http://github.com/th-tran" target="_blank" rel="noopener"> <i title="GitHub" class="fab fa-github-square fa-lg"></i> </a>
+        <a class="SocialIcon" href="http://linkedin.com/in/thomas-th-tran" target="_blank" rel="noopener"><i title="LinkedIn" class="fab fa-linkedin fa-lg" ></i></a>
+      </div>
+    </p>
+  </div>
+</footer> 
+
+    <!-- Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123796780-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123796780-1');
+
+    </script>
+    <!-- end scripts -->
+
+  </body>
+
+</html>
