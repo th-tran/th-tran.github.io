@@ -241,7 +241,7 @@ a:hover {
 }
 
 .Nav-section.Nav-section--active {
-  font-weight: var(--fontWeightHeavy);
+  font-weight: var(--fontWeightMed);
 }
 
 /* Footer */
@@ -319,5 +319,21 @@ a:hover {
 
 .Tag-header {
   font-size: 1.1em;
+  text-align: center;
+}
+
+.left-aligned {
+  margin: 0px 20px;
+  float: left;
+  padding-bottom: 0.5em;
+}
+
+.right-aligned {
+  margin: 0px 20px;
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+.center {
   text-align: center;
 }
