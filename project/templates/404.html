@@ -1,0 +1,9 @@
+{% extends "_layouts/base.html" %} {% block title %}Page Not Found{% endblock %} {% block content%}
+<h1 class="u-lead center">404</h1>
+<p class="center">Sorry, this page doesn't exist right now. Check back later!</p>
+<p class="center">
+  In the meantime, you can
+  <a href="{{ url_for('home') }}" onclick="window.history.back()">go back</a> where you came from or
+  <a href="{{ url_for('home') }}">return home</a>.
+</p>
+{% endblock %}

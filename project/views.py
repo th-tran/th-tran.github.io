@@ -11,11 +11,22 @@ from flask import render_template
 from project.app import app, pages, freezer
 
 
-def render_page(my_page):
+def render_page(my_page=None):
     '''Wrapper function to render page content with necessary data.'''
+    if my_page is not None:
+        return render_template(
+            'page.html',
+            page=my_page,
+            author=app.config['AUTHOR'],
+            site_name=app.config['SITE_NAME'],
+            site_url=app.config['SITE_URL'],
+            github_url=app.config['GITHUB_URL'],
+            linkedin_url=app.config['LINKEDIN_URL'],
+            mail_username=app.config['MAIL_USERNAME'],
+            mail_host=app.config['MAIL_HOST']
+        )
     return render_template(
-        'page.html',
-        page=my_page,
+        '404.html',
         author=app.config['AUTHOR'],
         site_name=app.config['SITE_NAME'],
         site_url=app.config['SITE_URL'],
@@ -51,3 +62,16 @@ def page(path):
     '''Endpoint to render all base pages.'''
     my_page = pages.get_or_404(path)
     return render_page(my_page)
+
+
+@app.route('/co-op/<path:path>/')
+def coop_page(path):
+    '''Endpoint to render co-op base pages.'''
+    my_page = pages.get_or_404(path)
+    return render_page(my_page)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    """Endpoint for the endpoints that could've been."""
+    return render_page(), 404
