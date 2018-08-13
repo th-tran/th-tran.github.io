@@ -50,6 +50,11 @@ def pages_url_generator():
         yield 'page', {'path': my_page.path}
 
 
+@freezer.register_generator
+def error_handlers():
+    yield "/404.html"
+
+
 @app.route('/')
 def home():
     '''Base endpoint.'''
@@ -60,13 +65,6 @@ def home():
 @app.route('/<path:path>/')
 def page(path):
     '''Endpoint to render all base pages.'''
-    my_page = pages.get_or_404(path)
-    return render_page(my_page)
-
-
-@app.route('/co-op/<path:path>/')
-def coop_page(path):
-    '''Endpoint to render co-op base pages.'''
     my_page = pages.get_or_404(path)
     return render_page(my_page)
 

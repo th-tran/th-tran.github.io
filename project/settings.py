@@ -23,6 +23,7 @@ def parent_dir(path):
 PROJECT_ROOT = parent_dir(PACKAGE_DIR)
 # Where to build static files to
 FREEZER_DESTINATION = os.path.join(PROJECT_ROOT, 'build')
+FREEZER_IGNORE_404_NOT_FOUND = True
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
 FLATPAGES_ROOT = os.path.join(PACKAGE_DIR, 'pages')
 FLATPAGES_EXTENSION = '.md'
