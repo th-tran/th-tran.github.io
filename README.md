@@ -25,13 +25,18 @@ $ pip install -r requirements.txt
 
 ### Building the site
 
-To run the local development server
+To run the local development server:
 
 ```
 $ python manage.py runserver
 ```
 
 Browse to `http://localhost:5000/` to view the site.
+
+To access the local development server on mobile:
+
+1) Get public ip address of computer (run `ipconfig` on Windows or `ifconfig` on Linux)
+2) Use the address in place of `localhost`
 
 To build the static version of the site:
 
