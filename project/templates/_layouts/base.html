@@ -8,9 +8,7 @@
     <meta name="author" content="{{ author }}">
     <meta name="description" content="{% block description %} The personal website of {{ author }} {% endblock %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel=icon type="image/png" href=favicon.png>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
     <!-- Event: Load TypeKit for modified fonts -->
     <script>
