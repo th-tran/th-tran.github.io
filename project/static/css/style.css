@@ -31,14 +31,14 @@
   --socialIconSize: 27px;
   --maxWidth: 40rem;
   /*--primaryColor: hsl(207, 48%, 26%);*/
-  --primaryColor: hsl(204, 62%, 47%);
+  --primaryColor: #209CEE;
   /*--secondaryColor: #32742c;*/
   --secondaryColor: #f06292;
   --mutedColor: #888;
   --mutedPrimary: hsla(207, 48%, 26%, 0.8);
   --gray: #ccc;
   --grayHighlight: #f9f9f9;
-  --backgroundColor: #212121;
+  --backgroundColor: #333;
 }
 
 @media (min-width: 50em) {
