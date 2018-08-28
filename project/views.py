@@ -38,13 +38,13 @@ def render_page(my_page=None):
 
 
 def make_external(url):
-    '''Generate a full url given an extension.'''
+    """Generate a full url given an extension."""
     return urljoin(app.config["BASE_URL"], url)
 
 
 @freezer.register_generator
 def pages_url_generator():
-    '''Register urls for all pages on freeze.'''
+    """Register urls for all pages on freeze."""
     all_pages = [p for p in pages]
     for my_page in all_pages:
         yield 'page', {'path': my_page.path}
@@ -52,6 +52,7 @@ def pages_url_generator():
 
 @freezer.register_generator
 def error_handlers():
+    """Register custom 404 to use on web server."""
     yield "/404.html"
 
 
@@ -64,7 +65,7 @@ def home():
 
 @app.route('/<path:path>/')
 def page(path):
-    '''Endpoint to render all base pages.'''
+    """Endpoint to render all base pages."""
     my_page = pages.get_or_404(path)
     return render_page(my_page)
 

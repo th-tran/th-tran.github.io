@@ -32,7 +32,8 @@
   --maxWidth: 40rem;
   /*--primaryColor: hsl(207, 48%, 26%);*/
   --primaryColor: hsl(204, 62%, 47%);
-  --secondaryColor: #32742c;
+  /*--secondaryColor: #32742c;*/
+  --secondaryColor: #f06292;
   --mutedColor: #888;
   --mutedPrimary: hsla(207, 48%, 26%, 0.8);
   --gray: #ccc;
@@ -112,7 +113,7 @@ h2.u-sublead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
   font-size: var(--stepUp2FixedSm);
-  color: var(--primaryColor);
+  text-decoration: underline;
 }
 
 h2 {
@@ -129,6 +130,8 @@ small, aside {
 
 a {
   color: var(--primaryColor);
+  font-weight: var(--fontWeightLight);
+  text-decoration: none;
 }
 
 a:hover {
@@ -323,17 +326,19 @@ a:hover {
 }
 
 .left-aligned {
-  margin: 0px 20px;
+  margin: 10px 20px;
   float: left;
-  padding-bottom: 0.5em;
 }
 
 .right-aligned {
-  margin: 0px 20px;
+  margin: 10px 20px;
   float: right;
-  padding-bottom: 0.5em;
 }
 
 .center {
   text-align: center;
+}
+
+.active {
+  font-weight: var(--fontWeightHeavy);
 }
