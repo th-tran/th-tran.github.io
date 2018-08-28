@@ -15,28 +15,28 @@ The second was the chance to have full design control over their engineering too
 
 I chose Flask to build the application, Jinja2 to template HTML, and Bootstrap and CSS to create the UI. Though I was educated on the fundamentals of web development in lectures, I realized that there is so much more to consider when developing a web application. I learned about core operations including the ability to template output, store sessions and route URLs, and how powerful these features are when put together. I discovered the pros and cons of caching, its effect on my own application and how I can fully utilize it. Over time I weaved these ideas into the web application, rewriting and refining my code several times. As a result, I created a web application that is easily extendable and updates in real-time. This truly feels like the culmination of my work at Auvik, and I am highly thankful for this opportunity from my manager. I feel much more capable as a web developer now.
 
-You can find screenshots of the web application [here]({{request.url_root}}co-op/auvik/project).
+You can find screenshots of the web application [here]({{site_url}}/co-op/auvik/project).
 
 <br>
 <hr>
 
 <h2 class="u-sublead">More About This Work Term</h2>
 
-[About the Employer]({{request.url_root}}co-op/auvik/about-the-employer)
+[About the Employer]({{site_url}}/co-op/auvik/about-the-employer)
 
-[Job Description]({{request.url_root}}co-op/auvik/job-description)
+[Job Description]({{site_url}}/co-op/auvik/job-description)
 
-[Work Term Goals]({{request.url_root}}co-op/auvik/work-term-goals)
+[Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{request.url_root}}co-op/auvik/skills-and-application)
+[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 <span class='active'>
-  [Opportunities]({{request.url_root}}co-op/auvik/opportunities)
+  [Opportunities]({{site_url}}/co-op/auvik/opportunities)
 </span>
 
-[Conclusion]({{request.url_root}}co-op/auvik/conclusion)
+[Conclusion]({{site_url}}/co-op/auvik/conclusion)
 
-[Acknowledgements]({{request.url_root}}co-op/auvik/acknowledgements)
+[Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
 <div style="float: left;">
   Previous: <a href="{{ site_url }}/co-op/auvik/skills-and-application">Skills and Application</a>

@@ -10,21 +10,21 @@ One of the key things I hope to get out of a co-op placement is the opportunity 
 
 <h2 class="u-sublead">More About This Work Term</h2>
 
-[About the Employer]({{request.url_root}}co-op/auvik/about-the-employer)
+[About the Employer]({{site_url}}/co-op/auvik/about-the-employer)
 
-[Job Description]({{request.url_root}}co-op/auvik/job-description)
+[Job Description]({{site_url}}/co-op/auvik/job-description)
 
-[Work Term Goals]({{request.url_root}}co-op/auvik/work-term-goals)
+[Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{request.url_root}}co-op/auvik/skills-and-application)
+[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
-[Opportunities]({{request.url_root}}co-op/auvik/opportunities)
+[Opportunities]({{site_url}}/co-op/auvik/opportunities)
 
 <span class='active'>
-  [Conclusion]({{request.url_root}}co-op/auvik/conclusion)
+  [Conclusion]({{site_url}}/co-op/auvik/conclusion)
 </span>
 
-[Acknowledgements]({{request.url_root}}co-op/auvik/acknowledgements)
+[Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
 <div style="float: left;">
   Previous: <a href="{{ site_url }}/co-op/auvik/opportunities">Opportunities</a>

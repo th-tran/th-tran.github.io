@@ -24,21 +24,21 @@ My second goal targeted at technology was to feel comfortable with using REST AP
 
 <h2 class="u-sublead">More About This Work Term</h2>
 
-[About the Employer]({{request.url_root}}co-op/auvik/about-the-employer)
+[About the Employer]({{site_url}}/co-op/auvik/about-the-employer)
 
-[Job Description]({{request.url_root}}co-op/auvik/job-description)
+[Job Description]({{site_url}}/co-op/auvik/job-description)
 
 <span class='active'>
-  [Work Term Goals]({{request.url_root}}co-op/auvik/work-term-goals)
+  [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 </span>
 
-[Skiils and Application]({{request.url_root}}co-op/auvik/skills-and-application)
+[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
-[Opportunities]({{request.url_root}}co-op/auvik/opportunities)
+[Opportunities]({{site_url}}/co-op/auvik/opportunities)
 
-[Conclusion]({{request.url_root}}co-op/auvik/conclusion)
+[Conclusion]({{site_url}}/co-op/auvik/conclusion)
 
-[Acknowledgements]({{request.url_root}}co-op/auvik/acknowledgements)
+[Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
 <div style="float: left;">
   Previous: <a href="{{ site_url }}/co-op/auvik/job-description">Job Description</a>

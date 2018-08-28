@@ -10,4 +10,4 @@ I gained from my work experience.
 
 <h2 class="u-sublead">Summer 2018</h2>
 
-Employer: [Auvik Networks Inc.]({{request.url_root}}co-op/auvik/about-the-employer)
+Employer: [Auvik Networks Inc.]({{site_url}}/co-op/auvik/about-the-employer)
