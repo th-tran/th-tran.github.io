@@ -15,7 +15,8 @@ The second was the chance to have full design control over their engineering too
 
 I chose Flask to build the application, Jinja2 to template HTML, and Bootstrap and CSS to create the UI. Though I was educated on the fundamentals of web development in lectures, I realized that there is so much more to consider when developing a web application. I learned about core operations including the ability to template output, store sessions and route URLs, and how powerful these features are when put together. I discovered the pros and cons of caching, its effect on my own application and how I can fully utilize it. Over time I weaved these ideas into the web application, rewriting and refining my code several times. As a result, I created a web application that is easily extendable and updates in real-time. This truly feels like the culmination of my work at Auvik, and I am highly thankful for this opportunity from my manager. I feel much more capable as a web developer now.
 
-You can find screenshots of the web application [here]({{site_url}}/co-op/auvik/project).
+You can find screenshots of the web application
+<a href="https://imgur.com/a/veUQ0sc/" target="\_blank" rel="noopener">here</a>.
 
 <br>
 <hr>

@@ -7,7 +7,8 @@ try:  # PY3
     from urllib.parse import urljoin
 except ImportError:  # PY2
     from urlparse import urljoin
-from flask import render_template
+import os
+from flask import render_template, send_from_directory
 from project.app import app, pages, freezer
 
 
@@ -58,9 +59,15 @@ def error_handlers():
 
 @app.route('/')
 def home():
-    '''Base endpoint.'''
+    """Base endpoint."""
     my_page = pages.get_or_404('home')
     return render_page(my_page)
+
+
+@app.route('/favicon.ico')
+def favicon():
+    """Endpoint to store the website's favicon."""
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico')
 
 
 @app.route('/<path:path>/')
