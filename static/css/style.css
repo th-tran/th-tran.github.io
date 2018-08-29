@@ -113,7 +113,6 @@ h2.u-sublead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
   font-size: var(--stepUp2FixedSm);
-  text-decoration: underline;
 }
 
 h2 {
