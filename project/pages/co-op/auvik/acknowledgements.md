@@ -25,16 +25,16 @@ Auvik logo: [https://www.auvik.com](https://www.auvik.com)
 
 Auvik mascot: [https://www.auvik.com/newsletter](https://www.auvik.com/newsletter)
 
-Factory Square: [https://factorysquare.ca/portfolio-item/factory-square-440-2](https://factorysquare.ca/portfolio-item/factory-square-440-2)
+Factory Square: <span>[https://factorysquare.ca/portfolio-item/factory-square-440-2](https://factorysquare.ca/portfolio-item/factory-square-440-2)</span>
 
 Kubernetes: [https://kubernetes.io/](https://kubernetes.io/)
 
-Python web: [https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/](https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/)
+Python web: <span>[https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/](https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/)</span>
 
 <br>
 <hr>
 
-<div style="float: left;">
+<div class="left-aligned">
   That's it! If you'd like, you can
   <a href="{{ site_url}}/co-op/auvik/about-the-employer">go back</a> to the beginning or
   <a href="{{ site_url}}/co-op">return to co-op</a>.

@@ -40,10 +40,10 @@ My second goal targeted at technology was to feel comfortable with using REST AP
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div style="float: left;">
+<div class="left-aligned">
   Previous: <a href="{{ site_url }}/co-op/auvik/job-description">Job Description</a>
 </div>
 
-<div style="float: right;">
+<div class="right-aligned">
   Next: <a href="{{ site_url }}/co-op/auvik/skills-and-application">Skills and Application</a>
 </div>

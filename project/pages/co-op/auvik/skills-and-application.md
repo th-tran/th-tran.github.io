@@ -32,10 +32,10 @@ My time at Auvik has enhanced my academic experience, as I was working in an agi
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div style="float: left;">
+<div class="left-aligned">
   Previous: <a href="{{ site_url }}/co-op/auvik/work-term-goals">Work Term Goals</a>
 </div>
 
-<div style="float: right;">
+<div class="right-aligned">
   Next: <a href="{{ site_url }}/co-op/auvik/opportunities">Opportunities</a>
 </div>

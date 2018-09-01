@@ -38,10 +38,10 @@ Quick facts:
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div style="float: left;">
+<div class="left-aligned">
   Previous: <a href="{{ site_url }}/co-op">Co-op</a>
 </div>
 
-<div style="float: right;">
+<div class="right-aligned">
   Next: <a href="{{ site_url }}/co-op/auvik/job-description">Job Description</a>
 </div>

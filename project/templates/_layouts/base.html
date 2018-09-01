@@ -7,7 +7,13 @@
     <title>{% block title %} {{ site_name }} {% endblock %}</title>
     <meta name="author" content="{{ author }}">
     <meta name="description" content="{% block description %} The personal website of {{ author }} {% endblock %}">
+    <!-- Uncomment to disable caching
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+    -->
     <link rel="shortcut icon" href="/favicon?v=2">
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
     <!-- Event: Load TypeKit for modified fonts -->

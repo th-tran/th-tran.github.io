@@ -39,10 +39,10 @@ You can find screenshots of the web application
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div style="float: left;">
+<div class="left-aligned">
   Previous: <a href="{{ site_url }}/co-op/auvik/skills-and-application">Skills and Application</a>
 </div>
 
-<div style="float: right;">
+<div class="right-aligned">
   Next: <a href="{{ site_url }}/co-op/auvik/conclusion">Conclusion</a>
 </div>

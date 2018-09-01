@@ -28,10 +28,10 @@ During my 3-month work term, my role at Auvik was a Software Development Intern.
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div style="float: left;">
+<div class="left-aligned">
   Previous: <a href="{{ site_url }}/co-op/auvik/about-the-employer">About the Employer</a>
 </div>
 
-<div style="float: right;">
+<div class="right-aligned">
   Next: <a href="{{ site_url }}/co-op/auvik/work-term-goals">Work Term Goals</a>
 </div>

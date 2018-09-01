@@ -31,7 +31,7 @@
   --socialIconSize: 27px;
   --maxWidth: 40rem;
   /*--primaryColor: hsl(207, 48%, 26%);*/
-  --primaryColor: #209CEE;
+  --primaryColor: #209cee;
   /*--secondaryColor: #32742c;*/
   --secondaryColor: #f06292;
   --mutedColor: #888;
@@ -41,7 +41,17 @@
   --backgroundColor: #333;
 }
 
-@media (min-width: 50em) {
+/* Breakpoints */
+
+/* Phone (landscape) and tablet and desktop: only screen and (min-width: 480px) */
+
+/* Tablet and desktop: only screen and (min-width: 768px) */
+
+/* Phone (all orientations): only screen and (max-width: 767px) */
+
+/* Phone (portrait): only screen and (max-width: 767px) and (orientation: portrait) */
+
+@media only screen and (min-width: 768px) {
   :root {
     --stepUp1: calc(1em * var(--ratioLg));
     --stepUp2: calc(1em * var(--ratioLg) * var(--ratioLg));
@@ -49,7 +59,7 @@
   }
 }
 
-@media (min-width: 37.5em) {
+@media only screen and (min-width: 480px) {
   :root {
     --stepDown1: calc(1em / var(--ratioLg));
   }
@@ -71,7 +81,7 @@ html {
   box-sizing: border-box;
 }
 
-@media (min-width: 37.5em) {
+@media only screen and (min-width: 480px) {
   html {
     font-size: var(--baseFontSizeMd);
   }
@@ -178,7 +188,7 @@ a:hover {
   flex: 0 0 20%;
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 768px) {
   .Site-footer {
     margin-top: 2.82715em;
   }
@@ -196,7 +206,7 @@ a:hover {
   justify-content: center;
 }
 
-@media (min-width: 37.5em) {
+@media only screen and (min-width: 480px) {
   .Nav {
     padding-top: 2em;
   }
@@ -213,7 +223,7 @@ a:hover {
   font-size: 1em;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 480px) {
   .Nav-home a {
     font-size: 1.3em;
   }
@@ -222,12 +232,12 @@ a:hover {
 .Nav-sections {
   flex: 1 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-@media (min-width: 37.5em) {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   .Nav-sections {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -255,12 +265,6 @@ a:hover {
   color: var(--mutedColor);
   text-align: center;
   padding: 0 1.8em;
-}
-
-@media (min-width: 37.5em) {
-  .Footer {
-    font-size: var(--stepDown1);
-  }
 }
 
 .Footer a {
@@ -307,7 +311,7 @@ a:hover {
   padding-top: 5vh;
 }
 
-@media (min-width: 50em) {
+@media only screen and (min-width: 768px) {
   .Page {
     padding-top: 2.82715em;
   }
@@ -324,6 +328,14 @@ a:hover {
   text-align: center;
 }
 
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .left-aligned {
   margin: 10px 20px;
   float: left;
@@ -333,6 +345,29 @@ a:hover {
   margin: 10px 20px;
   float: right;
 }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .left-aligned {
+    float: none;
+    margin: 0 auto;
+  }
+  .right-aligned {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/* Text */
+
+p {
+  word-wrap: break-word;
+}
+
+p span {
+  display: block;
+}
+
+/* Aesthetic */
 
 .center {
   text-align: center;

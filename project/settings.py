@@ -33,8 +33,12 @@ SITE_NAME = 'thtran.com'
 MAIL_USERNAME = 'tran.th.thomas'
 MAIL_HOST = 'gmail.com'
 
+# Production URL
 SITE_URL = 'http://thtran.com'
+# Stage URL
 #SITE_URL = 'http://localhost:5000'
+# Mobile stage URL
+#SITE_URL = 'http://10.0.2.2:5000'
 GITHUB_URL = 'http://github.com/th-tran'
 LINKEDIN_URL = 'http://linkedin.com/in/thomas-th-tran'
 GITHUB_REPO = 'http://www.github.com/th-tran/th-tran.github.io'
