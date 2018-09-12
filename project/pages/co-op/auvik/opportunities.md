@@ -29,7 +29,7 @@ You can find screenshots of the web application
 
 [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+[Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 <span class='active'>
   [Opportunities]({{site_url}}/co-op/auvik/opportunities)
@@ -39,10 +39,10 @@ You can find screenshots of the web application
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div class="left-aligned">
+<div class="left-aligned no-margin">
   Previous: <a href="{{ site_url }}/co-op/auvik/skills-and-application">Skills and Application</a>
 </div>
 
-<div class="right-aligned">
+<div class="right-aligned no-margin">
   Next: <a href="{{ site_url }}/co-op/auvik/conclusion">Conclusion</a>
 </div>

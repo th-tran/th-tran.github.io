@@ -11,7 +11,7 @@ A goal I held at high priority for this work term was developing upon my program
 
 Another skill that I aimed to improve during this work term was my communication. I was able to work on this goal as our team participated in daily stand up meetings that needed updates from each team member, as well as weekly sprint meetings that required team members to prepare in advance, articulate their current status, and discuss plans for the next sprint.
 
-My last goal was to work on personal organization skills and managing my time well. Due to the nature of my role, I'm confident I achieved this goal. Unlike school assignments with set rubrics and deadlines, much of my work involved open tasks with no set deadlines. I was in a position where I had to _judge myself_ on my work performance. With each sprint, I learned more about the extent of my capabilities. It became easier to set out a plan, chunk tasks and allocate my time. Upon completion of my time at Auvik, I  feel very confident in my ability to organize myself and feel as though I understand myself more as a professional.
+My last goal was to work on personal organization skills and managing my time well. Due to the nature of my role, I'm confident I achieved this goal. Unlike school assignments with set rubrics and deadlines, much of my work involved open tasks with no set deadlines. I was in a position where I had to _judge myself_ on my work performance. With each sprint, I learned more about the extent of my capabilities. It became easier to set out a plan, chunk tasks and allocate my time. Upon completion of my time at Auvik, I  feel more confident in my ability to organize myself and understand myself better as a professional.
 
 <h2 class="u-sublead">Goals targeted at technology</h2>
 
@@ -32,7 +32,7 @@ My second goal targeted at technology was to feel comfortable with using REST AP
   [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 </span>
 
-[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+[Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 [Opportunities]({{site_url}}/co-op/auvik/opportunities)
 
@@ -40,10 +40,10 @@ My second goal targeted at technology was to feel comfortable with using REST AP
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div class="left-aligned">
+<div class="left-aligned no-margin">
   Previous: <a href="{{ site_url }}/co-op/auvik/job-description">Job Description</a>
 </div>
 
-<div class="right-aligned">
+<div class="right-aligned no-margin">
   Next: <a href="{{ site_url }}/co-op/auvik/skills-and-application">Skills and Application</a>
 </div>

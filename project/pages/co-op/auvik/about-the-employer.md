@@ -30,7 +30,7 @@ Quick facts:
 
 [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+[Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 [Opportunities]({{site_url}}/co-op/auvik/opportunities)
 
@@ -38,10 +38,10 @@ Quick facts:
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div class="left-aligned">
+<div class="left-aligned no-margin">
   Previous: <a href="{{ site_url }}/co-op">Co-op</a>
 </div>
 
-<div class="right-aligned">
+<div class="right-aligned no-margin">
   Next: <a href="{{ site_url }}/co-op/auvik/job-description">Job Description</a>
 </div>

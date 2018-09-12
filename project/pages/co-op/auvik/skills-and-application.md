@@ -11,6 +11,8 @@ The independent nature of my role also allowed me to improve my technical resear
 
 My time at Auvik has enhanced my academic experience, as I was working in an agile development environment. I have learned about agile practices and other methodologies through lectures, but these methods had always been very intangible. The opportunity to immerse myself in this environment helped me to solidify the knowledge I have gained from University.
 
+The people I met at Auvik truly defined my work term experience. There were times when, without warning, things took a turn for the worst. There were times when I overloaded and brought down entire clusters overnight and was rightfully to blame. In spite of all this, no one ever pointed fingers. Everyone worked to fix problems as they come up and bring out the best in each other. They really did live by their principle, "Shit happens". It was always a remarkable sight to see, and I will definitely carry this quality with me throughout my future work terms.
+
 <br>
 <hr>
 
@@ -32,10 +34,10 @@ My time at Auvik has enhanced my academic experience, as I was working in an agi
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div class="left-aligned">
+<div class="left-aligned no-margin">
   Previous: <a href="{{ site_url }}/co-op/auvik/work-term-goals">Work Term Goals</a>
 </div>
 
-<div class="right-aligned">
+<div class="right-aligned no-margin">
   Next: <a href="{{ site_url }}/co-op/auvik/opportunities">Opportunities</a>
 </div>

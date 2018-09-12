@@ -16,7 +16,7 @@ One of the key things I want to get out of a co-op placement is the opportunity 
 
 [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+[Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 [Opportunities]({{site_url}}/co-op/auvik/opportunities)
 
@@ -26,10 +26,10 @@ One of the key things I want to get out of a co-op placement is the opportunity 
 
 [Acknowledgements]({{site_url}}/co-op/auvik/acknowledgements)
 
-<div class="left-aligned">
+<div class="left-aligned no-margin">
   Previous: <a href="{{ site_url }}/co-op/auvik/opportunities">Opportunities</a>
 </div>
 
-<div class="right-aligned">
+<div class="right-aligned no-margin">
   Next: <a href="{{ site_url }}/co-op/auvik/acknowledgements">Acknowledgements</a>
 </div>

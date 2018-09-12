@@ -123,6 +123,7 @@ h2.u-sublead {
   font-family: var(--fontSansSerif);
   font-weight: var(--fontWeightLight);
   font-size: var(--stepUp2FixedSm);
+  text-decoration: underline;
 }
 
 h2 {
@@ -235,11 +236,18 @@ a:hover {
   justify-content: flex-end;
 }
 
+/* Temporarily tweaking navbar item orientation on mobile  */
+
+/*
 @media only screen and (max-width: 767px) and (orientation: portrait) {
+  .Nav-home a {
+    justify-content: center;
+  }
   .Nav-sections {
     justify-content: center;
   }
 }
+*/
 
 .Nav-section {
   font-family: var(--fontSansSerif);
@@ -375,4 +383,8 @@ p span {
 
 .active {
   font-weight: var(--fontWeightHeavy);
+}
+
+.no-margin {
+  margin: 0 auto;
 }
