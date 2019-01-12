@@ -5,7 +5,7 @@ url: co-op-ncr-acknowledgements
 
 I would like to recognize those who helped me during my work term by making a few acknowledgments.
 
-<h2 class="u-sublead">Auvik</h2>
+<h2 class="u-sublead">NCR</h2>
 
 Firstly my supervisor, Jeewhoon Park. It was clear that Jeewhoon wanted co-ops to succeed. He was open to discussion, very thorough in his explanations, and put a strong focus on teamwork. He helped me integrate with the team. Despite his busy agenda, he always took time to follow up on me through casual discussion and one-on-one meetings to check up and hear my thoughts. I appreciate the fact that Jeewhoon was completely honest when giving feedback throughout the term. It was blunt at times, but necessary – I knew he wanted me to succeed. I was able to work on my weaknesses during this work term and get a better idea of important goals for my next work term. I truly hope to remain in contact with him beyond my work term.
 
