@@ -11,7 +11,7 @@ url: co-op-auvik
 
 [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
-[Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+[Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 
 [Opportunities]({{site_url}}/co-op/auvik/opportunities)
 

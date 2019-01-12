@@ -11,3 +11,7 @@ I gained from my work experience.
 <h2 class="u-sublead">Summer 2018</h2>
 
 Employer: [Auvik Networks Inc.]({{site_url}}/co-op/auvik/about-the-employer)
+
+<h2 class="u-sublead">Fall 2018</h2>
+
+Employer: [NCR (National Cash Register)]({{site_url}}/co-op/ncr/about-the-employer)
