@@ -25,7 +25,7 @@ The people I met at Auvik truly defined my work term experience. There were time
 [Work Term Goals]({{site_url}}/co-op/auvik/work-term-goals)
 
 <span class='active'>
-  [Skiils and Application]({{site_url}}/co-op/auvik/skills-and-application)
+  [Skills and Application]({{site_url}}/co-op/auvik/skills-and-application)
 </span>
 
 [Opportunities]({{site_url}}/co-op/auvik/opportunities)

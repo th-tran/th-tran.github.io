@@ -23,7 +23,7 @@ My time at NCR has enhanced my academic experience, as I was worked in an agile 
 [Work Term Goals]({{site_url}}/co-op/ncr/work-term-goals)
 
 <span class='active'>
-  [Skiils and Application]({{site_url}}/co-op/ncr/skills-and-application)
+  [Skills and Application]({{site_url}}/co-op/ncr/skills-and-application)
 </span>
 
 [Opportunities]({{site_url}}/co-op/ncr/opportunities)
