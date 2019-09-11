@@ -21,13 +21,13 @@ Thank you, everyone 🙂
 
 <h2 class="u-sublead">Image sources</h2>
 
-Auvik logo: [https://www.auvik.com](https://www.auvik.com)
+Auvik logo: <span>[https://www.auvik.com](https://www.auvik.com)</span>
 
-Auvik mascot: [https://www.auvik.com/newsletter](https://www.auvik.com/newsletter)
+Auvik mascot: <span>[https://www.auvik.com/newsletter](https://www.auvik.com/newsletter)</span>
 
 Factory Square: <span>[https://factorysquare.ca/portfolio-item/factory-square-440-2](https://factorysquare.ca/portfolio-item/factory-square-440-2)</span>
 
-Kubernetes: [https://kubernetes.io/](https://kubernetes.io/)
+Kubernetes: <span>[https://kubernetes.io/](https://kubernetes.io/)</span>
 
 Python web: <span>[https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/](https://cloudacademy.com/learning-paths/serverless-python-web-development-for-aws-84/)</span>
 
