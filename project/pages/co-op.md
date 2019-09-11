@@ -15,3 +15,7 @@ Employer: [Auvik Networks Inc.]({{site_url}}/co-op/auvik/about-the-employer)
 <h2 class="u-sublead">Fall 2018</h2>
 
 Employer: [NCR (National Cash Register)]({{site_url}}/co-op/ncr/about-the-employer)
+
+<h2 class="u-sublead">Summer 2019</h2>
+
+Employer: [IBM (International Business Machines)]({{site_url}}/co-op/ibm/about-the-employer)
