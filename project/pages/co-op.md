@@ -19,3 +19,7 @@ Employer: [NCR (National Cash Register)]({{site_url}}/co-op/ncr/about-the-employ
 <h2 class="u-sublead">Summer 2019</h2>
 
 Employer: [IBM (International Business Machines)]({{site_url}}/co-op/ibm/about-the-employer)
+
+<h2 class="u-sublead">Winter 2020</h2>
+
+Employer: [UofG (University of Guelph) / OMAFRA (Ontario Ministry of Agriculture, Food and Rural Affairs)]({{site_url}}/co-op/uofg/about-the-employer)
