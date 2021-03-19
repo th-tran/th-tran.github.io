@@ -3,7 +3,7 @@ flask==1.0.2
 flask-script==2.0.6
 flask-flatpages==0.6
 frozen-flask==0.15
-jinja2==2.10
+jinja2==2.11.3
 bs4==0.0.1
 beautifulsoup4==4.6.1
 webassets==0.12.1
