@@ -3,4 +3,4 @@ url: home
 
 <h1 class="u-lead">Thomas Tran</h1>
 
-4th year Computer Science student at the University of Guelph
+Computer Science graudate from the University of Guelph
